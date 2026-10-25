@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="映库 Yingku，面向 Mac 的个人媒体播放器。整理电影海报、播放 MKV、切换软硬解码，让自己的媒体库更好用。">
+<meta name="theme-color" content="#080d17"><title>映库 Yingku · 你的私人影院</title>
+<link rel="icon" href="icon.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><a class="brand" href="#"><img src="icon.png" alt="映库图标" width="42" height="42">映库 <span>YINGKU</span></a><nav aria-label="主导航"><a href="#features">功能</a><a href="#roadmap">开发进度</a><a href="#about">关于</a></nav></header>
+<main>
+<section class="hero"><div class="eyebrow"><span></span> macOS · 开发预览</div><h1>让每一部收藏，<br>都有自己的位置。</h1><p>从一个文件，到一座私人影院。<br>映库把播放、海报与字幕，放进简洁的 Mac 体验里。</p><div class="actions"><a class="primary" href="#features">认识映库 <span>↗</span></a><a class="secondary" href="#roadmap">查看开发进度</a></div><div class="platforms">为 Mac 打造 <i>·</i> iPhone 与 Apple TV 适配中</div>
+<div class="showcase" aria-label="映库媒体库概念示意，非实际软件截图"><div class="windowbar"><span class="dots">● ● ●</span><span>映库 · 个人媒体库</span><span>⌕</span></div><div class="library"><aside><strong>映库</strong><span class="active">▦　媒体库</span><span>◷　继续观看</span><span>☁　网盘来源</span></aside><div class="shelf"><div class="shelf-title"><div><small>YOUR COLLECTION</small><h2>你的电影时光。</h2></div><span class="pill">本地与网络播放</span></div><div class="posters"><div class="poster one"><span>原创示意封面</span><strong>山海之间</strong><small>BEYOND THE HORIZON</small></div><div class="poster two"><span>原创示意封面</span><strong>夜色漫游</strong><small>AFTER HOURS</small></div><div class="poster three"><span>原创示意封面</span><strong>来自远方</strong><small>A DISTANT SIGNAL</small></div></div></div></div><div class="playerbar"><span>▶</span><div class="track"><i></i></div><span>01:24:08</span><span>⛶</span></div></div><p class="caption">界面概念示意 · 实际功能以开发版本为准</p></section>
+<section id="features" class="section"><div class="section-heading"><small>MADE FOR YOUR MOVIES</small><h2>把注意力，留给电影。</h2><p>从播放的基本功开始，逐步完善你的媒体库。</p></div><div class="grid">
+<article><span class="number">01 / PLAYBACK</span><h3>双内核，更多播放选择。</h3><p>AVFoundation 与 VLCKit 配合，接入 MP4、MOV、MKV 等格式。支持自动、硬解优先和软件解码，切换时保留播放进度。</p><div class="tags"><span>MKV</span><span>MP4 / MOV</span><span>软硬解切换</span></div></article>
+<article><span class="number">02 / IMMERSION</span><h3>需要时出现，观影时退场。</h3><p>全屏闲置 3 秒后隐藏控制栏，鼠标活动时唤回。键盘支持暂停、跳转、音量、字幕与音轨切换。</p><div class="keys"><kbd>Space</kbd><kbd>←</kbd><kbd>→</kbd><kbd>F</kbd></div></article>
+<article><span class="number">03 / COLLECTION</span><h3>为收藏，找回封面。</h3><p>接入 TMDB 电影搜索，按片名和年份匹配海报与简介。支持批量补齐、手动选片与本地海报缓存，需要自行配置 Token。</p><div class="tags"><span>海报刮削</span><span>离线缓存</span></div></article>
+<article><span class="number">04 / SUBTITLES</span><h3>看得懂，也调得顺手。</h3><p>切换音轨与内嵌字幕，导入外挂 SRT，调整字幕延迟、字号和亮度。在线字幕搜索接入 OpenSubtitles，需要自行配置凭证。</p><div class="tags"><span>SRT</span><span>字幕延迟</span><span>多音轨</span></div></article>
+</div></section>
+<section id="roadmap" class="section roadmap"><div class="section-heading"><small>WORK IN PROGRESS</small><h2>认真做一个，更好用的播放器。</h2><p>映库仍在开发。这里清楚区分已经实现与尚待验证的能力。</p></div><div class="milestones"><article><span class="badge ready">已实现</span><h3>Mac 播放与媒体库</h3><p>本地与网络视频、观看进度、全屏控制、软硬解切换、视频信息，以及电影海报刮削。</p></article><article><span class="badge pending">待联调</span><h3>在线服务与画质</h3><p>115 官方授权与直链、TMDB 和字幕服务的真实账号联调；4K 性能、HDR、Dolby Vision 与无损音频仍待验收。</p></article><article><span class="badge planned">后续规划</span><h3>更多设备与影片资料</h3><p>iPhone、Apple TV 真机适配；演职员、剧集分季、蓝光原盘识别。当前不提供完整原盘菜单播放。</p></article></div></section>
+<section id="about" class="section about"><div><small>INDEPENDENT & PERSONAL</small><h2>你的影片，<br>你的媒体库。</h2></div><div><p>映库是一个独立开发的个人媒体播放器，目前用于非商业开发与个人使用。它不提供影视内容，也不分发影片资源。</p><p>在线海报匹配会向 TMDB 发送搜索片名；凭证保存在系统钥匙串。开发预览尚未公开发行，目前没有公开下载版本。</p><p class="muted">This product uses the TMDB API but is not endorsed or certified by TMDB.</p><a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">了解 TMDB ↗</a></div></section>
+</main><footer><span>映库 YINGKU</span><span>为自己的收藏，留一束光。</span><span>© 2026 Yingku</span></footer>
+</body></html>
